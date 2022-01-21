@@ -19,12 +19,10 @@ h2 {
     color: #f7b600;
 }
 
-.data-postagem {
-    font-size: 0.8em;
-    border-bottom: 1px solid #f4f4f4;
-    display: block;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+h3 {
+    color: #565656;
+    background: #ccc;
+    padding: 5px;
 }
 
 a {
@@ -40,47 +38,39 @@ a:hover {
     text-decoration: underline;
 }
 
-#cabecalho a:link,
-#cabecalho a:visited {
+#area-cabecalho a:link,
+#area-cabecalho a:visited {
     color: #fff;
     padding: 8px 12px;
 }
 
-#cabecalho a:hover {
+#area-cabecalho a:hover {
     color: #f7b600;
     background: #fff;
 }
 
 /*Layout*/
-#cabecalho {
+#area-cabecalho {
     background-color: #f7b600;
     padding: 15px;
     text-align: center;
 }
 
-#logo,
+#area-logo,
 #menu {
     padding: 10px;
 }
 
-#principal {
+#area-principal-post {
     width: 920px;
     margin: 0 auto;
     padding: 15px;
 }
 
-#lateral {
-    background: orange;
-}
 
-#postagens {
+#area-postagens {
     width: 660px;
     float: left;
-}
-
-#lateral {
-    width: 240px;
-    float: right;
 }
 
 #rodape {
@@ -90,7 +80,15 @@ a:hover {
     background: #ccc;
 }
 
-.ps-postagem {
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.postagens {
     padding: 20px;
     margin-bottom: 20px;
     background: white;
@@ -98,4 +96,16 @@ a:hover {
 
 .branco {
     color: white;
+}
+
+.area-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.texto-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
 }
