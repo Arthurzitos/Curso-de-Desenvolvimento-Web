@@ -35,7 +35,11 @@ a:hover{
 }
 
 /* adicionando função de marcação para a página atual do usuário*/
-#home .home a, #sobre .sobre a, #servicos .servicos a, #noticias .noticias a, #contato .contato a{
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a, 
+#servicos #navegacao .servicos a, 
+#noticias #navegacao .noticias a, 
+#contato #navegacao .contato a{
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;
