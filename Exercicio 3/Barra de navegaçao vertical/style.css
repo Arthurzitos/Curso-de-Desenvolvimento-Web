@@ -11,13 +11,13 @@ li{
 }
 */
 
-ul{
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-ul a{
+ul a {
     width: 200px;
     height: 40px;
     display: block;
@@ -28,18 +28,18 @@ ul a{
     background: #f7b600 url(_images/menu.png) no-repeat left bottom;
 }
 
-a:hover{
+a:hover {
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;
 }
 
 /* adicionando função de marcação para a página atual do usuário*/
-#home #navegacao .home a, 
-#sobre #navegacao .sobre a, 
-#servicos #navegacao .servicos a, 
-#noticias #navegacao .noticias a, 
-#contato #navegacao .contato a{
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;
