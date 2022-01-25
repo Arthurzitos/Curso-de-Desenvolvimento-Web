@@ -1,0 +1,36 @@
+/*
+.caixa {
+    width: 400px;
+    background: #dedede url(_images/topo.png) no-repeat left top;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+}
+
+.caixa p {
+    background: url(_images/baixo.png) no-repeat left bottom;
+    padding: 0px 20px 20px 20px;
+}
+*/
+
+/* Criado mesmo efeito acima, porém agora com imagens que contém efeito de degradê*/
+.caixa {
+    width: 400px;
+    background: #dedede url(_images/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url(_images/topo2.png) no-repeat left top;
+}
+
+.caixa p {
+    padding: 0 20px;
+}
+
+.caixa .ultimo {
+    background: url(_images/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+}
