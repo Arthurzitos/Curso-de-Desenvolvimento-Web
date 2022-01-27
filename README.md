@@ -13,7 +13,7 @@
 
 - Projeto TecBlog (Blog de tecnologia)
 
-🎇 3) CSS3 Intermediário & avançado ❌
+🎇 3) CSS3 Intermediário & avançado ✅
 
 - Projeto Notícias da Cidade (Portal de notícias) 
 
