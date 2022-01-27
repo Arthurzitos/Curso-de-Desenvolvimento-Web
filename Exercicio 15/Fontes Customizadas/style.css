@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Bohemian";
+    src: url("_fonts/1942report.woff");
+}
+
+@font-face {
+    font-family: "Manuscrita";
+    src: url("_fonts/DiamondSignature-Regular.woff");
+}
+
+h1 {
+    font-size: 6em;
+    font-family: "Bohemian";
+}
+
+h2 {
+    font-size: 6em;
+    font-family: "Manuscrita";
+}
