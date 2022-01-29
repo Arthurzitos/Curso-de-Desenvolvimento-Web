@@ -5,23 +5,23 @@
 
  🎇 1) HTML5 ✅
 
-- Projeto UNES (Página institucional de uma universidade)
+- Projeto UNES (Página institucional de uma universidade) = Concluído
 
 🎇 2) CSS3 ✅
 
-- Projeto Anna Bella (Página web pessoal)
+- Projeto Anna Bella (Página web pessoal) = Concluído
 
-- Projeto TecBlog (Blog de tecnologia)
+- Projeto TecBlog (Blog de tecnologia) = Concluído
 
 🎇 3) CSS3 Intermediário & avançado ✅
 
-- Projeto Notícias da Cidade (Portal de notícias) 
+- Projeto Notícias da Cidade (Portal de notícias) = Concluído
 
-- Projeto Chalé Hotel (Página publicitária) 
+- Projeto Chalé Hotel (Página publicitária) = Em pausa
 
-🎇 4) HTML5 e CSS3 - Recursos especiais ❌
+🎇 4) HTML5 e CSS3 - Recursos especiais ✅
 
-  - Projeto Museu Nacional
+  - Projeto Museu Nacional = Concluído
 
 🎇 5) Bootstrap 4 & Design responsivo ❌
 
