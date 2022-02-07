@@ -23,7 +23,7 @@
 
   - Projeto Museu Nacional = Concluído
 
-🎇 5) Bootstrap 4 & Design responsivo ❌
+🎇 5) Bootstrap 4 & Design responsivo ✅
 
 - Projeto Finans
 
