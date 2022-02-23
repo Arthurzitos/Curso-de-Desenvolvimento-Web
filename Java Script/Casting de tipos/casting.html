@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF & ELSE JS</title>
+
+    <!-- Scripts -->
+    <script>
+        /*
+        var nome = prompt('Digite o seu nome: ')
+        var nota = prompt('Digite sua nota final: ')
+        var media = 7
+        
+        if (nota >= media) {
+            document.write('<h1>O aluno ' + nome + ' está aprovado!</h1>')
+        } else {
+            document.write('<h1>O aluno ' + nome + ' está reprovado!</h1>')
+        }
+        */
+
+        // alteração para que o código fique com menos linhas e melhor de ler
+        var nome = prompt('Digite o seu nome: ')
+        var nota = prompt('Digite sua nota final: ')
+        var media = 7
+        var msg = 'aprovado'
+
+        if (nota < media) {
+            msg = 'reprovado'
+        }
+    document.write('<h1>O aluno ' + nome + ' está ' + msg + ' na matéria</h1>')
+
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>
