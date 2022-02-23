@@ -4,32 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IF & ELSE JS</title>
+    <title>Casting de tipos JS</title>
 
     <!-- Scripts -->
     <script>
-        /*
-        var nome = prompt('Digite o seu nome: ')
-        var nota = prompt('Digite sua nota final: ')
-        var media = 7
-        
-        if (nota >= media) {
-            document.write('<h1>O aluno ' + nome + ' está aprovado!</h1>')
-        } else {
-            document.write('<h1>O aluno ' + nome + ' está reprovado!</h1>')
-        }
-        */
+        //parseInt
+        //parseFloat
+        //toString
 
-        // alteração para que o código fique com menos linhas e melhor de ler
-        var nome = prompt('Digite o seu nome: ')
-        var nota = prompt('Digite sua nota final: ')
-        var media = 7
-        var msg = 'aprovado'
+        var var1 = 10
+        var var2 = 20
 
-        if (nota < media) {
-            msg = 'reprovado'
-        }
-    document.write('<h1>O aluno ' + nome + ' está ' + msg + ' na matéria</h1>')
+        //var var1 = prompt('Digite um número: ')
+        //var var2 = prompt('Digite outro número: ')
+
+        //var1 = parseInt(var1)
+        //var2 = parseFloat(var2)
+
+        console.log(var1)
+        console.log(var2)
+
+        document.write(var1.toString() + var2.toString())
 
         
     </script>
