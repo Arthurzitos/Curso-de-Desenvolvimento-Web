@@ -24,6 +24,8 @@
         */
 
         // minha solução:
+
+        /*
         var nome = prompt('Digite o seu nome: ')
         var nota = prompt('Digite sua nota final: ')
         var media = 7
@@ -33,6 +35,20 @@
         } else {
             document.write('<h1>O aluno ' + nome + ' está reprovado!</h1>')
         }
+        */
+
+        // alteração para que o código fique com menos linhas e melhor de ler
+        var nome = prompt('Digite o seu nome: ')
+        var nota = prompt('Digite sua nota final: ')
+        var media = 7
+        var msg = 'aprovado'
+
+        if (nota < media) {
+            msg = 'reprovado'
+        }
+    document.write('<h1>O aluno ' + nome + ' está ' + msg + ' na matéria</h1>')
+
+        
     </script>
 </head>
 <body>
