@@ -11,9 +11,43 @@
        //Praticando operadores lógicos
 
        //true && true = true
+       /*
        if(2 == 2 && 3 >= 1) {
            document.write("Verdadeiro")
        }
+       
+       */
+
+       // recriando o script de maneira mais complexa
+
+       // resolução do professor:
+       /*
+       var nome = prompt('Digite seu nome: ')
+       var nota = prompt('Digite sua nota final: ')
+       var faltas = prompt('Digite a quantidade de faltas: ')
+       var media = 7
+       max_faltas = 15
+
+       if (nota >= media && faltas <= max_faltas) {
+            document.write('Aprovado')
+       } else {
+           document.write('Reprovado')
+       }
+
+       */
+       
+       //minha resolução:
+        var nome = prompt('Digite o seu nome: ')
+        var nota = prompt('Digite sua nota final: ')
+        var faltas = prompt('Digite a quantidade de faltas: ')
+        var media = 7
+        var max_faltas = 15
+        
+        if (nota >= media && faltas < max_faltas) {
+            document.write('<h1>O aluno ' + nome + ' está aprovado!</h1>')
+        } else {
+            document.write('<h1>O aluno ' + nome + ' está reprovado!</h1>')
+        }
     </script>
 </head>
 <body>

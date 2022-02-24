@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador ternário JS</title>
+
+    <script>
+        var nome = prompt('Digite o seu nome: ')
+        var nota = prompt('Digite sua nota final: ')
+        var faltas = prompt('Digite a quantidade de faltas: ')
+        var media = 7
+        var max_faltas = 15
+        
+        if (nota >= media && faltas < max_faltas) {
+            document.write('<h1>O aluno ' + nome + ' está aprovado!</h1>')
+        } else {
+            document.write('<h1>O aluno ' + nome + ' está reprovado!</h1>')
+        }
+
+        // operador ternario
+
+        //sintaxe:
+        // var resultado = <condicao> ? <verdadeiro> : <falso> 
+        var resultado = nota >= media && faltas < max_faltas ? 'Aprovado' : 'Reprovado'
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
