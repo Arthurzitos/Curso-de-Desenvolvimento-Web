@@ -14,19 +14,34 @@
 
         /*
         switch (opcao) {
-            case:
+            case 1:
             // trecho de código que será executado
             break
             
-            case:
+            case 2:
             // trecho de código que será executado
             break
 
-            case:
+            default:
             // trecho de código que será executado
-            default
+            break
         }
         */
+
+        var parametro = prompt("Digite um número: ")
+        switch (parseInt(parametro)) {
+            case 1:
+            document.write('Parametro1')
+            break
+            
+            case 2:
+            document.write('Parametro2')
+            break
+
+            default:
+            document.write('Default')
+            break
+        }
     </script>
 </head>
 <body>
