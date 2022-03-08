@@ -25,9 +25,9 @@
 
 🎇 5) Bootstrap 4 & Design responsivo ✅
 
-- Projeto Finans
+- Projeto Finans = Concluído
 
-- Spotify Clone
+- Spotify Clone = Concluído
 
 🎇 6) JavaScript ❌
 
