@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Js - Flexibilidade de parâmetros</title>
+    <script>
+        // Funções - Flexibilidade de parâmetros
+        function soma(a, b) {
+            // tratando problemas após passar menos parâmetros do que deveria:
+            // dado que: a = 7 e b = undefined = not a number (no console)
+            b = b === undefined ? 0 : b
+            return a + b
+        }
+
+        console.log(soma(7, 7))
+
+        // passando mais parâmetros do que deveria:
+        console.log(soma(7, 7, 9 , 15)) // Desconsidera os parâmetros adicionais
+
+        // passando menos parãmetros do que se pode receber:
+        console.log(soma(7)) 
+
+        // não passando nenhum parâmetro
+        console.log(soma()) // retorno = not a number, pois as duas variáveis recebem o valor de "undefined"
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
