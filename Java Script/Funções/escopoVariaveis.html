@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Js - Escopo de Variáveis</title>
+    <script>
+        // Escopo de Variáveis
+
+        /*
+        Três escopos existentes:
+
+        Global = escopo do script como um todo
+        Função = corresponde ao conteúdo inserido dentro de um bloco de função
+        Bloco = instruções contidas dentro de comandos como: if ou switch case, por exemplo...
+        */
+
+        // entendo como declaração de variáveis se comporta dentro de cada escopo:
+
+        // Global
+        var serie = 'Friends'
+
+        // Bloco
+        if (true) {
+            var serie2 = "B99" // declarando variável dentro do escopo de bloco
+            document.write(serie)
+            // é possível acessar as variáveis globais dentro do escopo de bloco
+        }
+        document.write('<br/>')
+        document.write(serie2) // é possivel acessar váriaveis de dentro do escopo de bloco, dentro do escopo global
+
+        document.write('<br/>')
+
+        // Função
+        function x() {
+            var serie3 = "Ragnarok" //declarando variável dentro do escopo de função
+            document.write(serie)// também é possível acessar as variáveis globais dentro do escopo de função
+            document.write(serie2) // é possivel acessar váriaveis de dentro do escopo de bloco, dentro do escopo de função
+        }
+        x()
+
+        document.write('<br/>')
+        document.write(serie3) // não é possivel acessar variáveis do escopo função de fora dele
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
