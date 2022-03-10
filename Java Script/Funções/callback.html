@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Js - Funções de Callback</title>
+    <script>
+        // Funções de Callback
+
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            // lógica: recuperar o ID bia requisição http
+
+            if (true){ // alterar valor para "false" para forçar o chamado callbackErro
+                callbackSucesso('Funções de Callback em JS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+            } else {
+                callbackErro('Erro ao recuperar os dados')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr/>')
+            document.write('<p>' + descricao + '</p>')
+        }
+        
+        var callbackErro = function(erro){
+            document.write('<p><b>Erro:</b> ' + erro + '</p>')
+
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
