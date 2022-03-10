@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Js - Funções Nativas</title>
+    <script>
+        // Funções nativas para manipular strings
+
+        // Propriedade lenght = retorna a quantidade de caracteres de uma string
+        // lembrando que: a contagem é iniciada no zero
+
+        // length:
+        console.log('Arthur Guimaraes'.length) // retorna o número total de caracteres da string inserida
+
+        // charAt:
+        console.log('Arthur Guimaraes'.charAt(12)) // retorna o caractere que corresponde a posição do valor passado dentro dos parenteses
+
+        // indexOf:
+        var nome = 'Arthur Guimaraes'
+        var nome2 = ' Arthur dos Santos ' // variável criada com espaços em suas extremidades
+
+        console.log(nome.indexOf('G')) // retorna a posição do caractere passado como valor dentro dos parenteses
+        
+        // replace:
+        console.log(nome.replace('Guimaraes', 'dos Santos')) // substitui caracteres ou strings inteiras
+
+        // substr:
+        console.log(nome.substr(7, 9)) // partindo da posição do primeiro caractere indicado (7) retorna o número de caracteres indicados após a posição (9)
+
+        console.log(nome.toLowerCase()) // transforma todos os caracteres em minúsculo
+        
+        console.log(nome.toUpperCase()) // transforma todos os caracteres em maiúsculo
+        
+        console.log('-' + nome2.trim() + '-') // remove os espaços das extremidades de uma string
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
