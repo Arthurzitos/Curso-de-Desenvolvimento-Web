@@ -15,8 +15,8 @@
         console.log(data.getFullYear())
         */
 
-        //concatenando o código:
-        //console.log(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+        // concatenando o código:
+        // console.log(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
 
         // adicionar / remover dias:
         console.log(data.toString())
@@ -30,6 +30,41 @@
         // adicionar / remover anos:
         data.setFullYear(data.getFullYear() + 1)
         console.log(data.toString())
+        
+
+        //------------------------------------------------------------------------------------------------------------------------------//
+
+        // praticando um pouco mais com datas:
+        // ---- 15/01/2022
+        var data1 = new Date(2022, 0, 15)
+        
+        // ---- 23/02/2022
+        var data2 = new Date(2022, 1, 23)
+
+        console.log(data1.toString())
+        console.log(data2.toString())
+        
+        // converter as datas para algo que possa ser calculado
+
+        // método "getTime" = recupera a quantidade de milisegundos de 1 de janeiro de 1970 até as datas em questão
+        console.log(data1.getTime())
+        console.log(data2.getTime())
+
+        // encontrar a qtde de milissegundos entre data1 e data2
+        var ms_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+        console.log(ms_entre_datas)
+
+        // sabendo que:
+        // cada dia tem 24h, cada hora tem 60min, cada minuto tem 60s e cada segundo tem 1000ms
+        // então: quantos milissegundo existem em um dia?
+        var ms_por_dia = (1*24*60*60*1000)
+        console.log(' 1 dia tem: ' + ms_por_dia + ' milissegundos')
+
+        // diferença de dias entre data1 e data2:
+        console.log('A diferença de dias entre as datas é de ' + Math.ceil(ms_entre_datas / ms_por_dia) + ' dia(s).')
+
+    
+
 
         </script>
 </head>
