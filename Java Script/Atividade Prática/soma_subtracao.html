@@ -6,7 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 3: Operações Aritméticas JS</title>
     <script>
+        var num1 = prompt('Digite um número:')
+        var operacao = prompt('Digite a operação desejada:')
+        var num2 = prompt('Digite outro número:')
         
+        function calculo(num1, num2 , operacao){
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            var resultado = 0
+
+            if (operacao == 'soma'){
+                resultado = num1 +num2
+            }
+
+            if (operacao == 'subtracao'){
+                resultado = num1 - num2
+            }
+
+            if (operacao == 'subtração'){
+                resultado = num1 - num2
+            }
+
+            return resultado
+        }
+        document.write('<h1>O resultado da operação é: ' + calculo(num1, num2 , operacao) + '</h1>')
     </script>
 </head>
 <body>
