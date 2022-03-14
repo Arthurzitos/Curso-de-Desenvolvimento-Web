@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Mouse JS</title>
+    <script>
+        function acao1(){
+            alert('Clique simples')
+        }
+        function acao2(){
+            alert('Clique duplo')
+        }
+        function acao3(){
+            alert('Clique liberado')
+        }
+        function acao4(){
+            alert('Mouse em cima do objeto')
+        }
+        function acao5(){
+            alert('Mouse saiu do objeto')
+        }
+    </script>
+
+    <!--- Estilizando as Divs --->
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            margin: 3px;
+        }
+        h2 {
+            padding-top: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #um{
+            background: rgb(0, 255, 64);
+        }
+        #dois{
+            background: rgb(1, 255, 191);
+        }
+        #tres{
+            background: rgb(118, 68, 255);
+        }
+        #quatro{
+            background: rgb(195, 72, 243);
+        }
+        #cinco{
+            background: rgb(250, 56, 137);
+        }
+        
+    </style>
+</head>
+<body>
+    <!--- Ao clicar no objeto --->
+    <div id="um" onclick="acao1()" >
+        <h2>Clique simples</h2>
+    </div>
+
+    <!--- Ao clicar duas vezes no objeto --->
+    <div id="dois" ondblclick="acao2()" >
+        <h2>Clique duplo</h2>
+    </div>
+
+    <!--- Ao soltar o clique no objeto --->
+    <div id="tres" onmouseup="acao3()" >
+        <h2>Pressione e solte</h2>
+    </div>
+
+    <!--- Ao deixar o mouse em cima do objeto --->
+    <div id="quatro" onmouseover="acao4()" >
+        <h2>Pare aqui</h2>
+    </div>
+
+    <!--- Ao tirar o mouse de cima do objeto --->
+    <div id="cinco" onmouseout="acao5()" >
+        <h2>Retire o mouse</h2>
+    </div>
+</body>
+</html>
