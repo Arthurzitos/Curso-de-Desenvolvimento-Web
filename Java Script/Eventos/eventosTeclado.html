@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Mouse JS</title>
+    <script>
+        function acao1(){
+            alert('Tecla pressionada')
+        }
+        function acao2(){
+            alert('Caractere pressionado')
+        }
+        function acao3(){
+            alert('Tecla liberada')
+        }
+        
+    </script>
+
+    <!--- Estilizando elementos--->
+    <style>
+        body{
+            background:linear-gradient(to left, rgb(135, 250, 240), rgb(201, 241, 107), rgb(255, 231, 96));
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 235px;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--- Pressionando qualquer tecla --->
+        <h4>Pressione alguma tecla:</h4>
+        <input onkeydown="acao1()" type="text">  <!--- Exibe o caractere após da execução da função --->
+
+        <!--- Pressionando alguma tecla que retorne um caractere --->
+        <h4>Pressione alguma tecla que seja um caractere:</h4>
+        <input onkeydown="acao2()" type="text">
+
+        <!--- Liberando qualquer tecla --->
+        <h4>Pressione e solte alguma tecla:</h4>
+        <input onkeyup="acao3()" type="text">  <!--- Exibe o caractere antes da execução da função --->
+    </div>
+</body>
+</html>
