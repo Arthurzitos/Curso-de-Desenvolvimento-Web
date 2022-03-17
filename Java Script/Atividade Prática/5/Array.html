@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Objetos</title>
+</head>
+<!--- Scripts --->
+<script>
+    // criando array com objetos:
+    var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+    function adicionarObjetos() {
+        var objeto = document.getElementById('objeto').value
+
+        if(objeto != '') {
+            if (objetos.indexOf(objeto) !== -1) {
+                alert('Objeto já inserido!')
+            } else {
+                objetos.push(objeto)
+
+                    console.log(objetos)
+
+                    document.getElementById('objeto').value = ''
+            }
+                    
+        } else {
+            alert('Informe um objeto válido!')
+        }
+    }
+
+    function ordenarObjetos() {
+        objetos.sort()
+
+        console.log(objetos)
+    }
+</script>
+
+<!--- Estilizando conteúdo --->
+<style>
+    body {
+        background-color: rgb(10, 66, 129);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 45vh;
+        background: linear-gradient(to left, rgb(0, 92, 134), rgb(35, 51, 124), rgb(0, 92, 134));
+    }
+    span {
+        margin: 10px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <input
+            type="text"
+            placeholder="Informe um objeto"
+            id="objeto"
+        >
+        <span>
+            <input 
+                type="button" 
+                value="Adicionar"
+                onclick="adicionarObjetos()"
+            >
+        </span>
+        <input 
+            type="button"
+            value="Ordenar"
+            onclick="ordenarObjetos()"
+        >
+    </div>
+</body>
+</html>
