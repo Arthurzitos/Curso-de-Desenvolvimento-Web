@@ -31,7 +31,7 @@
 
 🎇 6) JavaScript ❌
 
-- App Calculadora
+- App Calculadora = Concluído
 
 - App Game Mata Mosquito (Um game sensacional que vai desafiar seus conhecimentos de lógica de programação)
 
